@@ -10,7 +10,9 @@ focusing on building strong logic and problem-solving skills.
 4. Study basic data types: `int`, `float`, `char`, etc.
 5. Write simple programs like calculating area or displaying patterns.
 
+
 // Example: Hello World Program
+
 #include <stdio.h>
 
 int main() {
@@ -42,6 +44,7 @@ int main() {
 4. Explore nested loops for complex patterns.
 
 // Example: Check for Even or Odd Number
+
 #include <stdio.h>
 
 int main() {
@@ -59,6 +62,7 @@ int main() {
 }
 
 // Example: Multiplication Table Using Loops
+
 #include <stdio.h>
 
 int main() {
@@ -82,6 +86,7 @@ int main() {
 3. Explore recursion to solve complex problems such as Fibonacci and factorials.
 
 // Example: Function to Calculate Square
+
 #include <stdio.h>
 
 int square(int num) {
@@ -99,6 +104,7 @@ int main() {
 }
 
 // Example: Fibonacci Sequence Using Recursion
+
 #include <stdio.h>
 
 int fibonacci(int n) {
@@ -132,6 +138,7 @@ int main() {
 3. Solve problems such as searching and sorting arrays.
 
 // Example: Sum of Array Elements
+
 #include <stdio.h>
 
 int main() {
@@ -148,6 +155,7 @@ int main() {
 }
 
 // Example: Reverse a String
+
 #include <stdio.h>
 #include <string.h>
 
@@ -176,6 +184,7 @@ int main() {
 3. Solve problems involving pointer-based logic.
 
 // Example: Swapping Numbers Using Pointers
+
 #include <stdio.h>
 
 void swap(int *a, int *b) {
@@ -198,6 +207,7 @@ int main() {
 }
 
 // Example: Dynamic Memory Allocation
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -237,6 +247,7 @@ int main() {
 4. Practice advanced algorithms such as sorting and searching.
 
 // Example: File Handling (Write and Read)
+
 #include <stdio.h>
 
 int main() {
