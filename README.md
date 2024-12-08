@@ -1,6 +1,5 @@
 # Roadmap for Learning C Programming with Logic Building
 
-```plaintext
 This roadmap provides a step-by-step guide for mastering C programming, 
 focusing on building strong logic and problem-solving skills.
 
@@ -33,6 +32,8 @@ int main() {
     printf("Sum: %.2f\n", sum);
     return 0;
 }
+
+---
 
 ## Phase 2: Control Flow
 1. Learn conditional statements (`if-else`, `switch-case`).
@@ -72,6 +73,8 @@ int main() {
 
     return 0;
 }
+
+---
 
 ## Phase 3: Functions and Recursion
 1. Understand how to create reusable code blocks with functions.
@@ -121,6 +124,8 @@ int main() {
     return 0;
 }
 
+---
+
 ## Phase 4: Arrays and Strings
 1. Work with single-dimensional arrays and multi-dimensional arrays.
 2. Learn string manipulation using character arrays.
@@ -162,6 +167,8 @@ int main() {
     printf("Reversed String: %s\n", rev);
     return 0;
 }
+
+---
 
 ## Phase 5: Pointers and Dynamic Memory
 1. Understand pointers and pointer arithmetic.
@@ -221,6 +228,8 @@ int main() {
     return 0;
 }
 
+---
+
 ## Phase 6: Advanced Concepts
 1. Learn structures for grouping related data.
 2. Explore file handling for reading/writing files.
@@ -260,6 +269,8 @@ int main() {
 
     return 0;
 }
+
+---
 
 ## Tips for Learning
 1. Practice daily to strengthen logic and problem-solving skills.
