@@ -3,14 +3,14 @@
 This roadmap provides a step-by-step guide for mastering C programming, 
 focusing on building strong logic and problem-solving skills.
 
-##Phase 1: Basics of C Programming:
+## Phase 1: Basics of C Programming:
 1. Set up your C development environment (e.g., GCC, Visual Studio Code).
 2. Understand the structure of a C program.
 3. Learn input/output functions (`printf` and `scanf`).
 4. Study basic data types: `int`, `float`, `char`, etc.
 5. Write simple programs like calculating area or displaying patterns.
 
-###Example: Hello World Program:
+### Example: Hello World Program:
 ```
 #include <stdio.h>
 
@@ -19,7 +19,7 @@ int main() {
     return 0;
 }
 ```
-###Example: Simple Calculator:
+### Example: Simple Calculator:
 ```
 #include <stdio.h>
 
@@ -35,13 +35,13 @@ int main() {
     return 0;
 }
 ```
-##Phase 2: Control Flow:
+## Phase 2: Control Flow:
 1. Learn conditional statements (`if-else`, `switch-case`).
 2. Master loops (`for`, `while`, `do-while`) for iteration.
 3. Practice solving logic problems such as finding even/odd numbers.
 4. Explore nested loops for complex patterns.
 
-###Example: Check for Even or Odd Number:
+### Example: Check for Even or Odd Number:
 ```
 #include <stdio.h>
 
@@ -59,7 +59,7 @@ int main() {
     return 0;
 }
 ```
-###Example: Multiplication Table Using Loops:
+### Example: Multiplication Table Using Loops:
 ```
 #include <stdio.h>
 
@@ -76,12 +76,12 @@ int main() {
     return 0;
 }
 ```
-##Phase 3: Functions and Recursion:
+## Phase 3: Functions and Recursion:
 1. Understand how to create reusable code blocks with functions.
 2. Learn about function arguments and return values.
 3. Explore recursion to solve complex problems such as Fibonacci and factorials.
 
-###Example: Function to Calculate Square:
+### Example: Function to Calculate Square:
 ```
 #include <stdio.h>
 
@@ -99,7 +99,7 @@ int main() {
     return 0;
 }
 ```
-###Example: Fibonacci Sequence Using Recursion:
+### Example: Fibonacci Sequence Using Recursion:
 ```
 #include <stdio.h>
 
@@ -126,12 +126,12 @@ int main() {
     return 0;
 }
 ```
-##Phase 4: Arrays and Strings:
+## Phase 4: Arrays and Strings:
 1. Work with single-dimensional arrays and multi-dimensional arrays.
 2. Learn string manipulation using character arrays.
 3. Solve problems such as searching and sorting arrays.
 
-###Example: Sum of Array Elements:
+### Example: Sum of Array Elements:
 ```
 #include <stdio.h>
 
@@ -148,7 +148,7 @@ int main() {
     return 0;
 }
 ```
-###Example: Reverse a String:
+### Example: Reverse a String:
 ```
 #include <stdio.h>
 #include <string.h>
@@ -170,12 +170,12 @@ int main() {
     return 0;
 }
 ```
-##Phase 5: Pointers and Dynamic Memory:
+## Phase 5: Pointers and Dynamic Memory:
 1. Understand pointers and pointer arithmetic.
 2. Manage dynamic memory using `malloc`, `calloc`, and `free`.
 3. Solve problems involving pointer-based logic.
 
-###Example: Swapping Numbers Using Pointers:
+### Example: Swapping Numbers Using Pointers:
 ```
 #include <stdio.h>
 
@@ -198,7 +198,7 @@ int main() {
     return 0;
 }
 ```
-###Example: Dynamic Memory Allocation:
+### Example: Dynamic Memory Allocation:
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -230,13 +230,13 @@ int main() {
     return 0;
 }
 ```
-Phase 6: Advanced Concepts:
+## Phase 6: Advanced Concepts:
 1. Learn structures for grouping related data.
 2. Explore file handling for reading/writing files.
 3. Implement data structures like linked lists, stacks, and queues.
 4. Practice advanced algorithms such as sorting and searching.
 
-###Example: File Handling (Write and Read):
+### Example: File Handling (Write and Read):
 ```
 #include <stdio.h>
 
@@ -271,7 +271,7 @@ int main() {
     return 0;
 }
 ```
-###Tips for Learning:
+### Tips for Learning:
 1. Practice daily to strengthen logic and problem-solving skills.
 2. Refer to classic books like "The C Programming Language" by Kernighan and Ritchie.
 3. Solve coding challenges on platforms like LeetCode, HackerRank, or Codeforces.
