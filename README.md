@@ -1,289 +1,165 @@
-# Roadmap for Learning C Programming with Logic Building
+<p># Roadmap for Learning C Programming with Logic Building</p>
 
-This roadmap provides a step-by-step guide for mastering C programming, 
-focusing on building strong logic and problem-solving skills.
+<p>This roadmap provides a step-by-step guide for mastering C programming,  focusing on building strong logic and problem-solving skills.</p>
 
-## Phase 1: Basics of C Programming
-1. Set up your C development environment (e.g., GCC, Visual Studio Code).
-2. Understand the structure of a C program.
-3. Learn input/output functions (`printf` and `scanf`).
-4. Study basic data types: `int`, `float`, `char`, etc.
-5. Write simple programs like calculating area or displaying patterns.
+<p>## Phase 1: Basics of C Programming 1. Set up your C development environment (e.g., GCC, Visual Studio Code). 2. Understand the structure of a C program. 3. Learn input/output functions (&#96;printf&#96; and &#96;scanf&#96;). 4. Study basic data types: &#96;int&#96;, &#96;float&#96;, &#96;char&#96;, etc. 5. Write simple programs like calculating area or displaying patterns.</p>
 
+<p> // Example: Hello World Program</p>
 
-// Example: Hello World Program
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int main() {  printf(&quot;Hello, World!\n&quot;);  return 0; }</p>
 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
-}
+<p>// Example: Simple Calculator #include <stdio.h></p>
 
-// Example: Simple Calculator
-#include <stdio.h>
+<p>int main() {  float num1, num2, sum;</p>
 
-int main() {
-    float num1, num2, sum;
+<p> printf(&quot;Enter two numbers: &quot;);  scanf(&quot;%f %f&quot;, &amp;num1, &amp;num2);</p>
 
-    printf("Enter two numbers: ");
-    scanf("%f %f", &num1, &num2);
+<p> sum = num1 + num2;</p>
 
-    sum = num1 + num2;
+<p> printf(&quot;Sum: %.2f\n&quot;, sum);  return 0; }</p>
 
-    printf("Sum: %.2f\n", sum);
-    return 0;
-}
+<p>---</p>
 
----
+<p>## Phase 2: Control Flow 1. Learn conditional statements (&#96;if-else&#96;, &#96;switch-case&#96;). 2. Master loops (&#96;for&#96;, &#96;while&#96;, &#96;do-while&#96;) for iteration. 3. Practice solving logic problems such as finding even/odd numbers. 4. Explore nested loops for complex patterns.</p>
 
-## Phase 2: Control Flow
-1. Learn conditional statements (`if-else`, `switch-case`).
-2. Master loops (`for`, `while`, `do-while`) for iteration.
-3. Practice solving logic problems such as finding even/odd numbers.
-4. Explore nested loops for complex patterns.
+<p>// Example: Check for Even or Odd Number</p>
 
-// Example: Check for Even or Odd Number
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int main() {  int num;</p>
 
-int main() {
-    int num;
+<p> printf(&quot;Enter a number: &quot;);  scanf(&quot;%d&quot;, &amp;num);</p>
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+<p> if (num % 2 == 0)  printf(&quot;%d is even.\n&quot;, num);  else  printf(&quot;%d is odd.\n&quot;, num);</p>
 
-    if (num % 2 == 0)
-        printf("%d is even.\n", num);
-    else
-        printf("%d is odd.\n", num);
+<p> return 0; }</p>
 
-    return 0;
-}
+<p>// Example: Multiplication Table Using Loops</p>
 
-// Example: Multiplication Table Using Loops
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int main() {  int num, i;</p>
 
-int main() {
-    int num, i;
+<p> printf(&quot;Enter a number: &quot;);  scanf(&quot;%d&quot;, &amp;num);</p>
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+<p> for (i = 1; i <= 10; i++) {  printf(&quot;%d x %d = %d\n&quot;, num, i, num * i);  }</p>
 
-    for (i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+<p> return 0; }</p>
 
-    return 0;
-}
+<p>---</p>
 
----
+<p>## Phase 3: Functions and Recursion 1. Understand how to create reusable code blocks with functions. 2. Learn about function arguments and return values. 3. Explore recursion to solve complex problems such as Fibonacci and factorials.</p>
 
-## Phase 3: Functions and Recursion
-1. Understand how to create reusable code blocks with functions.
-2. Learn about function arguments and return values.
-3. Explore recursion to solve complex problems such as Fibonacci and factorials.
+<p>// Example: Function to Calculate Square</p>
 
-// Example: Function to Calculate Square
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int square(int num) {  return num * num; }</p>
 
-int square(int num) {
-    return num * num;
-}
+<p>int main() {  int num;</p>
 
-int main() {
-    int num;
+<p> printf(&quot;Enter a number: &quot;);  scanf(&quot;%d&quot;, &amp;num);</p>
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+<p> printf(&quot;Square of %d is %d\n&quot;, num, square(num));  return 0; }</p>
 
-    printf("Square of %d is %d\n", num, square(num));
-    return 0;
-}
+<p>// Example: Fibonacci Sequence Using Recursion</p>
 
-// Example: Fibonacci Sequence Using Recursion
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int fibonacci(int n) {  if (n == 0)  return 0;  if (n == 1)  return 1;  return fibonacci(n - 1) + fibonacci(n - 2); }</p>
 
-int fibonacci(int n) {
-    if (n == 0)
-        return 0;
-    if (n == 1)
-        return 1;
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
+<p>int main() {  int n, i;</p>
 
-int main() {
-    int n, i;
+<p> printf(&quot;Enter the number of terms: &quot;);  scanf(&quot;%d&quot;, &amp;n);</p>
 
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
+<p> printf(&quot;Fibonacci Series:\n&quot;);  for (i = 0; i < n; i++) {  printf(&quot;%d &quot;, fibonacci(i));  }  printf(&quot;\n&quot;);</p>
 
-    printf("Fibonacci Series:\n");
-    for (i = 0; i < n; i++) {
-        printf("%d ", fibonacci(i));
-    }
-    printf("\n");
+<p> return 0; }</p>
 
-    return 0;
-}
+<p>---</p>
 
----
+<p>## Phase 4: Arrays and Strings 1. Work with single-dimensional arrays and multi-dimensional arrays. 2. Learn string manipulation using character arrays. 3. Solve problems such as searching and sorting arrays.</p>
 
-## Phase 4: Arrays and Strings
-1. Work with single-dimensional arrays and multi-dimensional arrays.
-2. Learn string manipulation using character arrays.
-3. Solve problems such as searching and sorting arrays.
+<p>// Example: Sum of Array Elements</p>
 
-// Example: Sum of Array Elements
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int main() {  int arr[5], sum = 0, i;</p>
 
-int main() {
-    int arr[5], sum = 0, i;
+<p> printf(&quot;Enter 5 numbers:\n&quot;);  for (i = 0; i < 5; i++) {  scanf(&quot;%d&quot;, &amp;arr[i]);  sum += arr[i];  }</p>
 
-    printf("Enter 5 numbers:\n");
-    for (i = 0; i < 5; i++) {
-        scanf("%d", &arr[i]);
-        sum += arr[i];
-    }
+<p> printf(&quot;Sum of elements: %d\n&quot;, sum);  return 0; }</p>
 
-    printf("Sum of elements: %d\n", sum);
-    return 0;
-}
+<p>// Example: Reverse a String</p>
 
-// Example: Reverse a String
+<p>#include <stdio.h> #include <string.h></p>
 
-#include <stdio.h>
-#include <string.h>
+<p>int main() {  char str[100], rev[100];  int i, length;</p>
 
-int main() {
-    char str[100], rev[100];
-    int i, length;
+<p> printf(&quot;Enter a string: &quot;);  gets(str);</p>
 
-    printf("Enter a string: ");
-    gets(str);
+<p> length = strlen(str);  for (i = 0; i < length; i++) {  rev[i] = str[length - i - 1];  }  rev[length] = '\0';</p>
 
-    length = strlen(str);
-    for (i = 0; i < length; i++) {
-        rev[i] = str[length - i - 1];
-    }
-    rev[length] = '\0';
+<p> printf(&quot;Reversed String: %s\n&quot;, rev);  return 0; }</p>
 
-    printf("Reversed String: %s\n", rev);
-    return 0;
-}
+<p>---</p>
 
----
+<p>## Phase 5: Pointers and Dynamic Memory 1. Understand pointers and pointer arithmetic. 2. Manage dynamic memory using &#96;malloc&#96;, &#96;calloc&#96;, and &#96;free&#96;. 3. Solve problems involving pointer-based logic.</p>
 
-## Phase 5: Pointers and Dynamic Memory
-1. Understand pointers and pointer arithmetic.
-2. Manage dynamic memory using `malloc`, `calloc`, and `free`.
-3. Solve problems involving pointer-based logic.
+<p>// Example: Swapping Numbers Using Pointers</p>
 
-// Example: Swapping Numbers Using Pointers
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>void swap(int *a, int *b) {  int temp = *a;  *a = *b;  *b = temp; }</p>
 
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+<p>int main() {  int x, y;</p>
 
-int main() {
-    int x, y;
+<p> printf(&quot;Enter two numbers: &quot;);  scanf(&quot;%d %d&quot;, &amp;x, &amp;y);</p>
 
-    printf("Enter two numbers: ");
-    scanf("%d %d", &x, &y);
+<p> printf(&quot;Before swap: x = %d, y = %d\n&quot;, x, y);  swap(&amp;x, &amp;y);  printf(&quot;After swap: x = %d, y = %d\n&quot;, x, y);</p>
 
-    printf("Before swap: x = %d, y = %d\n", x, y);
-    swap(&x, &y);
-    printf("After swap: x = %d, y = %d\n", x, y);
+<p> return 0; }</p>
 
-    return 0;
-}
+<p>// Example: Dynamic Memory Allocation</p>
 
-// Example: Dynamic Memory Allocation
+<p>#include <stdio.h> #include <stdlib.h></p>
 
-#include <stdio.h>
-#include <stdlib.h>
+<p>int main() {  int *arr, n, i;</p>
 
-int main() {
-    int *arr, n, i;
+<p> printf(&quot;Enter the number of elements: &quot;);  scanf(&quot;%d&quot;, &amp;n);</p>
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
+<p> arr = (int*)malloc(n * sizeof(int));  if (arr == NULL) {  printf(&quot;Memory allocation failed!\n&quot;);  return 1;  }</p>
 
-    arr = (int*)malloc(n * sizeof(int));
-    if (arr == NULL) {
-        printf("Memory allocation failed!\n");
-        return 1;
-    }
+<p> printf(&quot;Enter %d elements:\n&quot;, n);  for (i = 0; i < n; i++) {  scanf(&quot;%d&quot;, &amp;arr[i]);  }</p>
 
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+<p> printf(&quot;The elements are:\n&quot;);  for (i = 0; i < n; i++) {  printf(&quot;%d &quot;, arr[i]);  }  printf(&quot;\n&quot;);</p>
 
-    printf("The elements are:\n");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+<p> free(arr);  return 0; }</p>
 
-    free(arr);
-    return 0;
-}
+<p>---</p>
 
----
+<p>## Phase 6: Advanced Concepts 1. Learn structures for grouping related data. 2. Explore file handling for reading/writing files. 3. Implement data structures like linked lists, stacks, and queues. 4. Practice advanced algorithms such as sorting and searching.</p>
 
-## Phase 6: Advanced Concepts
-1. Learn structures for grouping related data.
-2. Explore file handling for reading/writing files.
-3. Implement data structures like linked lists, stacks, and queues.
-4. Practice advanced algorithms such as sorting and searching.
+<p>// Example: File Handling (Write and Read)</p>
 
-// Example: File Handling (Write and Read)
+<p>#include <stdio.h></p>
 
-#include <stdio.h>
+<p>int main() {  FILE *file;  char text[100];</p>
 
-int main() {
-    FILE *file;
-    char text[100];
+<p> file = fopen(&quot;example.txt&quot;, &quot;w&quot;);  if (file == NULL) {  printf(&quot;Error opening file!\n&quot;);  return 1;  }</p>
 
-    file = fopen("example.txt", "w");
-    if (file == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
+<p> printf(&quot;Enter text to write to the file: &quot;);  gets(text);</p>
 
-    printf("Enter text to write to the file: ");
-    gets(text);
+<p> fprintf(file, &quot;%s&quot;, text);  fclose(file);</p>
 
-    fprintf(file, "%s", text);
-    fclose(file);
+<p> file = fopen(&quot;example.txt&quot;, &quot;r&quot;);  if (file == NULL) {  printf(&quot;Error opening file!\n&quot;);  return 1;  }</p>
 
-    file = fopen("example.txt", "r");
-    if (file == NULL) {
-        printf("Error opening file!\n");
-        return 1;
-    }
+<p> printf(&quot;Content of the file:\n&quot;);  while (fgets(text, sizeof(text), file)) {  printf(&quot;%s&quot;, text);  }  fclose(file);</p>
 
-    printf("Content of the file:\n");
-    while (fgets(text, sizeof(text), file)) {
-        printf("%s", text);
-    }
-    fclose(file);
+<p> return 0; }</p>
 
-    return 0;
-}
+<p>---</p>
 
----
-
-## Tips for Learning
-1. Practice daily to strengthen logic and problem-solving skills.
-2. Refer to classic books like "The C Programming Language" by Kernighan and Ritchie.
-3. Solve coding challenges on platforms like LeetCode, HackerRank, or Codeforces.
+<p>## Tips for Learning 1. Practice daily to strengthen logic and problem-solving skills. 2. Refer to classic books like &quot;The C Programming Language&quot; by Kernighan and Ritchie. 3. Solve coding challenges on platforms like LeetCode, HackerRank, or Codeforces.</p>
